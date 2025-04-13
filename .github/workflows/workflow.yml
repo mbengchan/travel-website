@@ -21,4 +21,4 @@ jobs:
       - name: Deploy
         run: |-
             gsutil -m rm rf gs://${{ secrets.GCS_BUCKET }}/* || echo "$?"
-            gsutil -m rsync -r . gs://${{ secrets.GCS_BUCKET }}/
+            gsutil -m rsync -r -x ".*\.json$|.*\.git|(^|/)(data)(/|$)" . gs://${{ secrets.GCS_BUCKET }}/
