@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.sign-up {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.hero h2 {
+    font-size: 1rem;
+    color: orangered;
+    text-transform: uppercase;;
+}
+
+.hero h1 {
+    line-height: 1.2;
+    font-size: 4.3rem;
+    margin: 1rem 0;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.find-out-more-btn {
+    color: white;
+    padding: 10px 1rem;
+    border-radius: 10px;
+    border: 1px solid darkgoldenrod;
+    background-color: darkgoldenrod;
+}
+
+.button-play-circle {
+    color: #fff;
+    height: 3em;
+    width: 3em;
+    border-width: 0px;
+    border-radius: 90%;
+    box-shadow: 5px 5px 20px orangered;
+    background-color: orangered;
+
+}
+
+.hero .hero-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: right;
+}
